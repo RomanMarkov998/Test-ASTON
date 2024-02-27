@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class StringComparator {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Ввод двух строк
+        System.out.print("Введите строку a: ");
+        String a = scanner.nextLine();
+
+        System.out.print("Введите строку b: ");
+        String b = scanner.nextLine();
+
+        // Сравнение строк и вывод результата
+        compareStrings(a, b);
+    }
+
+    private static void compareStrings(String a, String b) {
+        // Сравнение строк
+        if (a.equals(b)) {
+            System.out.println("Строки идентичны");
+        } else {
+            System.out.println("Строки неидентичны");
+        }
+    }
+}
